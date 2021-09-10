@@ -1,2 +1,2 @@
 # physique.com
-FITTNESS QUAD
+FITNESS QUAD
