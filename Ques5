@@ -4,7 +4,7 @@
     <title>Title</title>
 <style>
         #heading {
-            background: black;
+            background: blue;
         }
     </style>
 </head>
