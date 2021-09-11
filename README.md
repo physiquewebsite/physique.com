@@ -1,2 +1,0 @@
-# physique.com
-FITTNESS QUAD
