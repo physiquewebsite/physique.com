@@ -1,0 +1,42 @@
+.section1 {
+
+            opacity: 0.9;
+        }
+        .sec1 {
+            position: absolute;
+            top: 250px;
+            left: 106px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 60px;
+            overflow: hidden;
+            background: thistle;
+        }
+        li h4 {
+            float: left;
+            display: block;
+            color: navy;
+            text-align: center;
+            padding: 0px 86px;
+            text-decoration: none;
+        }
+        .intro {
+
+        }
+        .cat1 {
+            float: left;
+            padding: 20px;
+            margin: 10px;
+            width:20%;
+            height:360px;
+            background-color: beige;
+        }
+        .cat1 img {
+            padding: 54px;
+            height: 50%;
+            width: 50%;
+            align: center;
+        }
