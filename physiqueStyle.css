@@ -23,20 +23,146 @@
             padding: 0px 86px;
             text-decoration: none;
         }
-        .intro {
 
-        }
+       .intro
+       {
+       border:3px;
+       border-color:#034f84;
+       border-style:ridge;
+       width:60%;
+       height:50%;
+       }
+
+
+
         .cat1 {
             float: left;
-            padding: 20px;
+            padding: 25px;
             margin: 10px;
             width:20%;
             height:360px;
-            background-color: beige;
+            background-color:beige;
         }
+
         .cat1 img {
-            padding: 54px;
+            padding: 10px;
+            margin-left:50px;
+            align:center;
             height: 50%;
             width: 50%;
-            align: center;
+            }
+
+
+        #flip
+        {
+          height:50px;
+          overflow:hidden;
         }
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 1.7s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+.section2
+{
+position:relative;
+display:inline-block;
+}
+
+.section2 .sec2 h1
+{
+
+
+   position: absolute;
+   z-index:999;
+   margin:0 auto;
+   left:0;
+   right:0px;
+   top:10%;
+   text-align:right;
+   width:80%;
+  }
+
+  .section2 .sec2 p
+{
+
+
+   position: absolute;
+   z-index:999;
+   margin:0 auto;
+   left:0;
+   right:0px;
+   top:40%;
+   text-align:right;
+   width:80%;
+  }
+  .section2 .sec2 h3
+{
+
+
+   position: absolute;
+   z-index:999;
+   margin:0 auto;
+   left:0;
+   right:0px;
+   top:40%;
+   text-align:right;
+   width:80%;
+  }
+.sec2 .btn {
+  position:absolute;
+  background-color:#36486b;
+  color: black;
+  border:none;
+  padding:10px;
+  font-size:40px;
+  cursor: pointer;
+  border-radius:4px;
+  text-align: center;
+  margin-top:-200px;
+  margin-left:500px;
+}
+.sec2 .btn:hover
+{
+background-color:black;
+color:white;
+}
+
+.section3 img
+{
+float:right;
+margin-top:-370px;
+margin-bottom:-20px;
+width:400px;
+height:330px;
+padding:0 100px 60px ;
+}
+
+
+
+
+
