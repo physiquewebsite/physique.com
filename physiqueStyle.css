@@ -1,3 +1,13 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Sep, 2021, 9:57:00 PM
+    Author     : Himani
+*/
+
 .section1 {
 
             opacity: 0.9;
@@ -23,18 +33,6 @@
             padding: 0px 86px;
             text-decoration: none;
         }
-
-       .intro
-       {
-       border:3px;
-       border-color:#034f84;
-       border-style:ridge;
-       width:60%;
-       height:50%;
-       }
-
-
-
         .cat1 {
             float: left;
             padding: 25px;
@@ -43,16 +41,18 @@
             height:360px;
             background-color:beige;
         }
-
-        .cat1 img {
+        .cat1 a{
+            float: right;
+            font-size: 10;
+        }
+        .cat1 img
+        {
             padding: 10px;
             margin-left:50px;
             align:center;
             height: 50%;
             width: 50%;
-            }
-
-
+        }
         #flip
         {
           height:50px;
@@ -91,12 +91,11 @@
 {
 position:relative;
 display:inline-block;
+
 }
 
 .section2 .sec2 h1
 {
-
-
    position: absolute;
    z-index:999;
    margin:0 auto;
@@ -109,8 +108,6 @@ display:inline-block;
 
   .section2 .sec2 p
 {
-
-
    position: absolute;
    z-index:999;
    margin:0 auto;
@@ -133,20 +130,20 @@ display:inline-block;
    text-align:right;
    width:80%;
   }
-.sec2 .btn {
+.sec2 button {
   position:absolute;
-  background-color:#36486b;
+  background-color:indianred;
   color: black;
   border:none;
   padding:10px;
-  font-size:40px;
+  font-size:35px;
   cursor: pointer;
   border-radius:4px;
   text-align: center;
   margin-top:-200px;
-  margin-left:500px;
+  margin-left:1100px;
 }
-.sec2 .btn:hover
+.sec2 button:hover
 {
 background-color:black;
 color:white;
@@ -161,8 +158,24 @@ width:400px;
 height:330px;
 padding:0 100px 60px ;
 }
-
-
-
-
-
+.intro  {
+  margin: 25px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+.intro p{
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+  font-size:22px;color:#618685;text-align:justify;letter-spacing:2px;font-family:Arial;
+}
+footer
+{
+    text-align: left;
+    padding:20px;
+    color:whitesmoke;
+    font-size: 12;
+    background-color: #0A0528;
+    
+}
