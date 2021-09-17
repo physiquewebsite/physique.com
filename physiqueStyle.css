@@ -177,5 +177,24 @@ footer
     color:whitesmoke;
     font-size: 12;
     background-color: #0A0528;
-    
+    height:20px;
 }
+.social{
+    float:right;
+    display:flex;
+    justify-content: center;
+}
+.social a{
+    height:15px;
+    width:20px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+.social a i{
+    color: white;
+}
+.social a i:hover{
+    color: silver;
+}
+
