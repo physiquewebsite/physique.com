@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Customized Nutritional Plan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                border: 2px solid buttonface;
+                background-color: papayawhip;
+                padding: 20px;
+                width: 700px;
+                height:250px;
+              
+            }
+        </style>
+    </head>
+    <body>
+        
+    <center><h1 style="padding: 20px;margin:20px; font-family:sans-serif  ">Customized Nutritional Plan</h1></center>
+    <center><form>
+        First Name :<input type="text" name="First Name :"><br><br>
+Last Name  :<input type="text" name="Last Name :"><br><br>
+Age  :<input type="text" name="Age :"><br><br>
+Criteria:<select name ="Criteria">
+<option value="Veg">Veg</option>
+<option value="Non-veg">Non-veg</option>
+<option value="Vegan">Vegan</option>
+</select><br><br><br>
+My main goals are focused around:
+<input type="radio" value="Muscle gain">Muscle gain
+<input type="radio" value="Weight Loss">Weight Loss
+<input type="radio" value="Strength gain">Strength gain
+
+<br><br><button type="button">
+Submit</button>
+        </form></center>
+    </body>
+</html>
