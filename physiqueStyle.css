@@ -2,10 +2,8 @@
             opacity: 0.9;
         }
 
-        {box-sizing: border-box;}
-        body {font-family: Verdana, sans-serif;}
         .mySlides {display: none;}
-        img {vertical-align: left;}
+
         .slideshow-container {
           position: relative;
           margin: auto;
@@ -42,7 +40,7 @@
         @media only screen and (max-width: 300px) {
           .text {font-size: 11px}
         }
-        ul {
+        .menu ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -50,7 +48,7 @@
             overflow: hidden;
             background: thistle;
         }
-        li h4 {
+        .menu li h4 {
             float: left;
             display: block;
             color: navy;
