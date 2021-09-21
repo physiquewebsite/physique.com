@@ -6,16 +6,28 @@
      <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color:#CAE6DC">
-    <div class="menu">
-        <ul>
-        <li><h4>HOME PAGE</h4></li>
-        <li><h4>WORKOUTS</h4></li>
-        <li><h4>FITNESS TIPS</h4></li>
-        <li><h4>ABOUT US</h4></li>
-        <li><h4>SIGN IN</h4></li>
-        </ul>
+<body style="background-color:black">
+    <div class="menu" id="topMenu">
+        <a href="#home" class="active"><h4>HOME PAGE</h4></a>
+        <div class="dropdown">
+            <button class="dropbtn">WORKOUTS
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Yoga.html">Yoga</a>
+              <a href="#">Zumba</a>
+              <a href="#">Cardio</a>
+              <a href="#">Weight Training</a>
+            </div>
+        </div>
+        <a href="Tips.html"><h4>FITNESS TIPS</h4></a>
+        <a href="#about"><h4>ABOUT US</h4></a>
+        <a href="#sign"><h4>SIGN IN</h4></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
+
     <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext"><h1 style="font-size:50px;">Build your strength,<br>transform your body</h1></div>
@@ -31,7 +43,6 @@
           <div class="numbertext"></div>
           <img src="https://wallpaperaccess.com/full/834254.jpg",height="650px", width="100%">
         </div>
-
     </div>
         <br>
         <div style="text-align:center">
@@ -39,7 +50,7 @@
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
-    <script src="Pscript.js"></script>
+
     <div class="intro">
         <h1>
             <center>WELCOME TO <div id=flip> <div><div>PHYSIQUE</div></div></center>
@@ -96,10 +107,8 @@
         <p style="font-size:35px;color:#f7786b;padding:80px;">For customized nutritional plan</p>
     <form action="https://google.com/search">
         <button type="submit" formaction="form.html">Get it now!</button>
-
-</form>
+    </form>
     </div>
-
 </div>
 
     <footer>
@@ -113,5 +122,6 @@
             <i class="fab fa-twitter"></i></a>
         </div>
     </footer>
+<script src="Pscript.js"></script>
 </body>
 </html>
