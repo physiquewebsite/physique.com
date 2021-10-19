@@ -35,7 +35,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:darkgoldenrod;
     margin-left: 0px;
-  
+
 }
 .b .b1{
     background-color:rgb(27,27,27);
@@ -48,7 +48,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(219, 189, 192);
     font-size: 20px;
-    
+
 }
 .b .b1 p{
     font-weight: normal;
@@ -60,7 +60,7 @@
     content: "\2022";
     color:black;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
   }
@@ -80,7 +80,7 @@
 .b .b2 h2{
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:darkgreen; 
+    color:darkgreen;
     font-size: 22px;
     background-color:darkseagreen;
     width: 340px;
@@ -182,4 +182,3 @@
     margin-top: -65px;
     margin-left: 10px;
 }
-
