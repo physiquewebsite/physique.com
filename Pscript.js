@@ -26,3 +26,11 @@ var slideIndex = 0;
               dots[slideIndex-1].className += " active";
               setTimeout(showSlides, 5000); // Change image every 5 seconds
             }
+
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
