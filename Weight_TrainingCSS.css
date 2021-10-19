@@ -1,0 +1,185 @@
+.image{
+    position: relative;
+    text-align: center;
+}
+.image img{
+    height: 450px;
+    width:100%;
+}
+.image h1{
+    font-size: 60px;
+    font-weight: bolder;
+    font-style:inherit;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:lavender;
+    position: absolute;
+    top: 100px;
+    right: 500px;
+}
+.image p{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkorange;
+    position: absolute;
+    top:240px;
+    right: 670px;
+    font-weight: bold;
+    text-align:left;
+    opacity: 0.7;
+}
+
+.b h1
+{
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkgoldenrod;
+    margin-left: 0px;
+  
+}
+.b .b1{
+    background-color:rgb(27,27,27);
+    width: 650px;
+    padding: 5px;
+    padding-left: 10px;
+}
+.b .b1 h2{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(219, 189, 192);
+    font-size: 20px;
+    
+}
+.b .b1 p{
+    font-weight: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: cornsilk;
+}
+.b .b1 ul li::before {
+    content: "\2022";
+    color:black;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+.b .b1 ul li{
+    font-weight: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    list-style-type: none;
+    color: cornsilk;
+}
+.b .b2{
+    float: left;
+    margin: 10px;
+    border-radius:0;
+}
+
+.b .b2 h2{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkgreen; 
+    font-size: 22px;
+    background-color:darkseagreen;
+    width: 340px;
+    padding: 5px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: -2.7px;
+    height: 75px;
+}
+.b .b2 p{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 15px;
+    margin-top: -65px;
+    margin-left: 10px;
+}
+.inter .it h1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkgoldenrod;
+    margin-left: 0px;
+}
+.inter .it p{
+    background-color: rgb(27,27,27);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:cornsilk;
+    text-align: center;
+    width: 600px;
+    padding: 10px;
+}
+.inter .it1 {
+    float: left;
+    margin: 10px;
+    border-radius:0;
+}
+.inter .it1 h2{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkblue;
+    font-size: 22px;
+    background-color:cornflowerblue;
+    width: 340px;
+    padding: 5px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: -2.7px;
+    height: 75px;
+}
+
+.inter .it1 p{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 15px;
+    margin-top: -65px;
+    margin-left: 10px;
+}
+
+.adv .adv1 h1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkgoldenrod;
+}
+.adv .adv1 p{
+    background-color: rgb(27,27,27);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:cornsilk;
+    text-align: center;
+    width: 630px;
+    padding: 10px;
+}
+.adv .adv2 {
+    float: left;
+    margin: 10px;
+    border-radius:0;
+}
+.adv .adv2 h2{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darksalmon;
+    font-size: 22px;
+    background-color:rgb(168, 7, 7,0.7);
+    width: 340px;
+    padding: 5px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: -2.7px;
+    height: 75px;
+}
+
+.adv .adv2 p{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 15px;
+    margin-top: -65px;
+    margin-left: 10px;
+}
+
