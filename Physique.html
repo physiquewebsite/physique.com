@@ -6,7 +6,7 @@
      <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color:black">
+<body style="background-color:rgb(40, 40, 43);">
     <div class="menu" id="topMenu">
         <a href="#home" class="active"><h4>HOME PAGE</h4></a>
         <div class="dropdown">
@@ -15,17 +15,46 @@
             </button>
             <div class="dropdown-content">
               <a href="Yoga.html">Yoga</a>
-              <a href="#">Zumba</a>
-              <a href="#">Cardio</a>
-              <a href="#">Weight Training</a>
+              <a href="zumba.html">Zumba</a>
+              <a href="Cardio.html">Cardio</a>
+              <a href="Weight_Training.html">Weight Training</a>
             </div>
         </div>
         <a href="Tips.html"><h4>FITNESS TIPS</h4></a>
         <a href="#about"><h4>ABOUT US</h4></a>
-        <a href="#sign"><h4>SIGN IN</h4></a>
+        <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4>SIGN IN</h4></a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
+    </div>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" style="background-color: darkBlue">Sign Up</button>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: lavender">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
     </div>
 
     <div class="slideshow-container">
@@ -35,12 +64,12 @@
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext"></div>
+          <div class="numbertext"><h1 style="font-size:50px;">Hustle for that <br>MUSCLE</h1></div>
           <img src="https://c0.wallpaperflare.com/preview/244/648/954/fitness-men-sports-gym.jpg", height="650px", width="100%">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext"></div>
+          <div class="numbertext"><h1 style="font-size:50px; color:white;">Nothing will work <br>unless you do</h1></div>
           <img src="https://wallpaperaccess.com/full/834254.jpg",height="650px", width="100%">
         </div>
     </div>
