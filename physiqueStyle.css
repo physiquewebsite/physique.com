@@ -1,4 +1,4 @@
-        .menu {
+.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -278,6 +278,7 @@ footer
     text-align: left;
     color:whitesmoke;
     font-size: 12;
+    clear: both;
 }
 .f1
 {
@@ -358,6 +359,9 @@ footer .f1 .btn:hover
 .f2 .social a i:hover{
     color: silver;
 }
+.f2 li a ul:hover{
+  color:skyblue;
+} 
 
         .container input[type=text], input[type=password] {
           width: 100%;
