@@ -6,33 +6,102 @@
         <style>
             form{
                 border: 2px solid buttonface;
-                background-color: papayawhip;
+                /* background-color: papayawhip; */
+                width: 850px;
+                height:700px;
                 padding: 20px;
-                width: 700px;
-                height:250px;
-              
+                top: -22px;
+                position: relative;
+                margin: 20px;
+                border:0px;
+                color: azure;
+                font-weight: bolder;
+                font-size: 25px;
             }
+            form input[type= text]{
+                height: 40px;
+                width: 225px;
+                border-radius: 30px;
+                opacity: 0.7;
+                border: 0px;
+                padding: 20px;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                display: inline-block;
+                text-align: right;
+            }
+            form input[type=radio]{
+                height: 20px;
+                width: 20px;
+                opacity: 0.7;
+                border:0px;
+                padding:20px;
+            }
+
+            .super{
+                background-image:url('https://image.shutterstock.com/image-photo/abstract-blurred-food-restaurant-260nw-697424737.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;        
+            }
+            .super .sub h1{
+                padding:20px;
+                /* background-color: aquamarine;  */
+                width: 700px;
+                font-family:sans-serif;                  
+            }
+            .cri{
+                float:left;
+                padding: 20px;
+                background-color: white;
+                margin: 15px;
+                color: black;
+            }
+            .cri input{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+            }
+            .cri:hover{
+                transform: scale(1.1);
+                color:crimson;
+            }
+            .super .sub h1{
+                font-family:'Times New Roman', Times, serif;
+                font-style:normal;
+                font-weight: bolder;
+            }
+        
         </style>
     </head>
     <body>
-        
-    <center><h1 style="padding: 20px;margin:20px; font-family:sans-serif  ">Customized Nutritional Plan</h1></center>
-    <center><form>
-        First Name :<input type="text" name="First Name :"><br><br>
-Last Name  :<input type="text" name="Last Name :"><br><br>
-Age  :<input type="text" name="Age :"><br><br>
-Criteria:<select name ="Criteria">
-<option value="Veg">Veg</option>
-<option value="Non-veg">Non-veg</option>
-<option value="Vegan">Vegan</option>
-</select><br><br><br>
-My main goals are focused around:
-<input type="radio" value="Muscle gain">Muscle gain
-<input type="radio" value="Weight Loss">Weight Loss
-<input type="radio" value="Strength gain">Strength gain
+    <div class="super"><br>
+        <div class="sub">
+            <center><h1>Customized Nutritional Plan</h1></center>
+            <center><form>
+                First Name  <input type="text" name="First Name :"><br><br>
+                Last Name   <input type="text" name="Last Name :"><br><br>
+                Age         <input type="text" name="Age :"><br><br>
+                Gender:   <input type="radio" id="male" name="gender" value="Male">   <label for="male">Male</label>
+           
+                     <input type="radio" id="female" name="gender" value="Female">  <label for="female">Female</label><br><br>
+                <p>Choose your preference</p>
+                <div class=cri>
+                    <input type="image" src="https://www.eatright.org/-/media/eatrightimages/fitness/trainingandrecovery/buildingmuscle/building-muscle-vegetarian-diet-610859884.jpg" alt="Submit">
+                    <br>Veg
+                </div>
+                <div class=cri>
+                    <input type="image" src="https://media.istockphoto.com/photos/indian-chicken-curry-picture-id471614507?k=20&m=471614507&s=612x612&w=0&h=snprycYKdTlsTn9vDNuFkWVPv-mwwRJoz2UidfhKvwQ=" alt="Submit">
+                    <br>Non-veg
+                </div>
+                <div class=cri>
+                    <input type="image" src="https://cdn.shopify.com/s/files/1/1374/7199/files/Screen_Shot_2019-11-20_at_11.24.36_AM_large.png?v=1574249096" alt="Submit">
+                    <br>Vegan
+                </div>
+                </form></center>
+        </div>
 
-<br><br><button type="button">
-Submit</button>
-        </form></center>
+    </div>    
+   
     </body>
 </html>
