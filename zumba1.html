@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Physique.com | Zumba</title>
+    <title>Physique.com</title>
     <link rel="stylesheet" type="text/css" href="physiqueStyle.css">
     <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+     
     <style>
        p
         {
@@ -14,15 +21,36 @@
         .vertical {
             border-left: 6px solid whitesmoke;
             border-style: double;
-            height: 3350px;
+            height: 3305px;
             position:absolute;
             left: 49%;
         }
+        .timer {
+            clear:both;
+            background-color: indianRed;
+            padding: 12px;
+        }
+        .timer button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .timer button:hover {
+            transform: scale(1.1);
+        }
      </style>
 </head>
-<body style="background-color: black">
+<body style="background-color:rgb(40, 40, 43);">
     <div class="menu" id="topMenu">
-        <a href="physique.html"><h4>HOME PAGE</h4></a>
+        <a href="physique.html"><h4 style="font-family: 'Cinzel', serif;">HOME PAGE</h4></a>
         <div class="dropdown">
             <button class="dropbtn">WORKOUTS
               <i class="fa fa-caret-down"></i>
@@ -34,47 +62,74 @@
               <a href="Weight_Training.html">Weight Training</a>
             </div>
         </div>
-        <a href="Tips.html"><h4>FITNESS TIPS</h4></a>
-        <a href="#about"><h4>ABOUT US</h4></a>
-        <a href="#sign"><h4>SIGN IN</h4></a>
+        <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
+        <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
+        <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
-     <div class = "vertical"></div>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" style="background-color: darkBlue">Sign Up</button>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: lavender">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div> <div class = "vertical"></div>
     <p > 1. CLASSIC ZUMBA </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qNByp5yiKOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vG_Bs0QLc3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/vG_Bs0QLc3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p > 2. STEP ZUMBA </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ak64202vMB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1_u7Wc8_uak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/1_u7Wc8_uak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p > 3. ZUMBA TONING </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/39hU6PCjfrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/t7AaIF-GWIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/t7AaIF-GWIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p > 4. AQUA-ZUMBA  </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ajv8AMBNwsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z1PS7wjfkLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/Z1PS7wjfkLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p > 5. ZUMBA SENTAO </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/rLs-0s4-TTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5tGyNB4xvok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/5tGyNB4xvok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p > 6. ZUMBA KIDS AND ZUMBA KIDS JR. </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/f6LJUgdulJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7TjSnzyLjro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/7TjSnzyLjro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p > 7. ZUMBINI</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/DN0JNRwa1hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/itLkK8DKMIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/itLkK8DKMIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p > 8. ZUMBA IN THE CIRCUIT</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/V564Jb5WIRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    style=“margin-right: 3em;”
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XiqIO6m9Drk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <iframe style="padding-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/XiqIO6m9Drk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="timer" style="clear:both;">
+        <h1 style="text-align:center;">Start a Workout on your own with a timer!</h1>
+        <center><button onclick="document.location='Timer.html'">Start Timer</button></center>
+    </div>
     <footer>
         <div class="f1">
              <p>Newsletter</p>
@@ -89,7 +144,7 @@
                 <a style="color: #e6ffff;" href="Cardio.html"><ul>Cardio</ul></a>
                 <a style="color: #e6ffff;" href="Weight_Training.html"><ul>Weight Training</ul></a>
                 <a style="color: #e6ffff;" href="Tips.html"><ul>Fitness Tips</ul></a>
-                <a style="color: #e6ffff;" href="#aboutus"><ul>About us</ul></a>
+                <a style="color: #e6ffff;" href="aboutus.html"><ul>About us</ul></a>
             </li>
         <div class="social">
         <a href="https://www.facebook.com/" target="_blank">
