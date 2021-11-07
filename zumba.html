@@ -1,10 +1,16 @@
 <!DOCTYPE html>
    <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <title>Physique.com | Zumba</title>
+    <title>Physique.com</title>
     <link rel="stylesheet" type="text/css" href="physiqueStyle.css">
     <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+     
     <style>
         .box1 {
             opacity: 0.7;
@@ -79,11 +85,32 @@
 			background: #39ff14;
 			box-shadow: 0 0 50px #39ff14;
 		}
+        .timer {
+            clear:both;
+            background-color: indianRed;
+            padding: 12px;
+        }
+        .timer button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .timer button:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
-<body style="background-color: black">
+<body style="background-color:rgb(40, 40, 43);">
     <div class="menu" id="topMenu">
-        <a href="physique.html"><h4>HOME PAGE</h4></a>
+        <a href="physique.html"><h4 style="font-family: 'Cinzel', serif;">HOME PAGE</h4></a>
         <div class="dropdown">
             <button class="dropbtn">WORKOUTS
               <i class="fa fa-caret-down"></i>
@@ -95,14 +122,42 @@
               <a href="Weight_Training.html">Weight Training</a>
             </div>
         </div>
-        <a href="Tips.html"><h4>FITNESS TIPS</h4></a>
-        <a href="#about"><h4>ABOUT US</h4></a>
-        <a href="#sign"><h4>SIGN IN</h4></a>
+        <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
+        <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
+        <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" style="background-color: darkBlue">Sign Up</button>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: lavender">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
     <div class="box1">
         <p>IT'S FUN,IT'S FITNESS,IT'S ZUMBA.</p>
     </div>
@@ -163,6 +218,10 @@
         <button type="submit" formaction="zumba1.html">TRY IT NOW!</button>
     </form>
     </div>
+    <div class="timer" style="clear:both;">
+        <h1 style="text-align:center;">Start a Workout on your own with a timer!</h1>
+        <center><button onclick="document.location='Timer.html'">Start Timer</button></center>
+    </div>
     <footer>
         <div class="f1">
              <p>Newsletter</p>
@@ -177,7 +236,7 @@
                 <a style="color: #e6ffff;" href="Cardio.html"><ul>Cardio</ul></a>
                 <a style="color: #e6ffff;" href="Weight_Training.html"><ul>Weight Training</ul></a>
                 <a style="color: #e6ffff;" href="Tips.html"><ul>Fitness Tips</ul></a>
-                <a style="color: #e6ffff;" href="#aboutus"><ul>About us</ul></a>
+                <a style="color: #e6ffff;" href="aboutus.html"><ul>About us</ul></a>
             </li>
         <div class="social">
         <a href="https://www.facebook.com/" target="_blank">
