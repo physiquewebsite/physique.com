@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Physique.com | Fitness Tips</title>
-    <link rel="stylesheet" type="text/css" href="physiqueStyle.css">
-    <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
+    <title>Physique.com</title>
+     <link rel="stylesheet" type="text/css" href="physiqueStyle.css">
+     <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+      
     <style>
 
       .box1 {
@@ -45,7 +52,7 @@
     </head>
     <body style="background-color:gainsboro">
         <div class="menu" id="topMenu">
-            <a href="physique.html"><h4>HOME PAGE</h4></a>
+            <a href="physique.html" ><h4 style="font-family: 'Cinzel', serif;">HOME PAGE</h4></a>
             <div class="dropdown">
                 <button class="dropbtn">WORKOUTS
                   <i class="fa fa-caret-down"></i>
@@ -57,12 +64,41 @@
                   <a href="Weight_Training.html">Weight Training</a>
                 </div>
             </div>
-            <a href="Tips.html" ><h4>FITNESS TIPS</h4></a>
-            <a href="aboutus.html" class="active"><h4>ABOUT US</h4></a>
-            <a href="#sign"><h4>SIGN IN</h4></a>
+            <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
+            <a href="aboutus.html" class="active"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
+            <a href="#signin" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
+        </div>
+    
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
+            </div>
+    
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+    
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
+                <button type="submit" style="background-color: darkBlue">Sign Up</button>
+    
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+    
+            <div class="container" style="background-color: lavender">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
         </div>
         <center><h1> OUR STORY</h1></center>
         <div class="box1">
@@ -78,7 +114,7 @@
         </div>
 
         <div class="girl">
-            <img src="https://truffld.com/content/images/2021/04/Ishita-Jain_portrait-1.jpeg", height="250px", width="100%">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEs5L_6qSfIzQ/profile-displayphoto-shrink_400_400/0/1636271140385?e=1642032000&v=beta&t=Rjih9-haExjj1PR-0R02bUAUSZ-Ycit6jA6d6lhCDRA", height="250px", width="100%">
             <div class="content"><center><h3>ERICA ATTAL </h3>
             <h4>Co-founder & Web Developer </h4> </center>
             </div>
@@ -98,32 +134,38 @@
             </div>
             </div>
 
-        <footer>
-            <div class="f1" style="clear: both;">
-                 <p>Newsletter</p>
-                <input type="email" placeholder="Your email" id="footer-email">
-                <button class="btn" ><i class="fab fa-telegram" style="font-size: 25px;" ;></i></button>
-            </div>
-            <div class=f2>
-                <li style="list-style-type: none; text-align: center;">
-                    <ul>Home</ul>
-                    <ul>Experience</ul>
-                    <ul>News</ul>
-                    <ul>About us</ul>
-                    <ul>Contact</ul>
-                </li>
-            <div class="social">
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank">
-            <i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/?lang=en" target="_blank">
-                <i class="fab fa-twitter"></i></a>
-            </div>
-            <br>
-            <center><a>@Copyright 2021 by Physique.  All rights reserved.</a></center>
-            </div>
-        </footer>
+            <footer>
+                <div class="f1">
+                     <p>Newsletter</p>
+                    <input type="email" placeholder="Your email" id="footer-email">
+                    <button class="btn" ><i class="fab fa-telegram" style="font-size: 25px;" ;></i></button>
+                </div>
+                <div class=f2>
+                    <li style="list-style-type: none; text-align: center;">
+                        <a style="color: #e6ffff;" href="physique.html"><ul>Home</ul></a>
+                        <a style="color: #e6ffff;" href="Yoga.html"><ul>Yoga</ul></a>
+                        <a style="color: #e6ffff;" href="zumba.html"><ul>Zumba</ul></a>
+                        <a style="color: #e6ffff;" href="Cardio.html"><ul>Cardio</ul></a>
+                        <a style="color: #e6ffff;" href="Weight_Training.html"><ul>Weight Training</ul></a>
+                        <a style="color: #e6ffff;" href="Tips.html"><ul>Fitness Tips</ul></a>
+                        <a style="color: #e6ffff;" href="aboutus.html"><ul>About us</ul></a>
+                    </li>
+                <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank">
+                    <i class="fab fa-twitter"></i></a>
+                </div>
+                <br>
+                <center><a style="color: #e6ffff;" href="tel:+911234567890"> Contact: +91-1234567890 </a></center>
+                <br>
+                <center><a style="color: #e6ffff" href="mailto: physique123@gmail.com">Email us here!</a></center>
+                <br>
+                <center><a>@Copyright 2021 by Physique.  All rights reserved.</a></center>
+                </div>
+            </footer>
 
     </body>
     </html>
