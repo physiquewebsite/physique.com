@@ -182,3 +182,24 @@
     margin-top: -65px;
     margin-left: 10px;
 }
+.timer {
+    clear:both;
+    background-color: indianRed;
+    padding: 12px;
+}
+.timer button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.timer button:hover {
+    transform: scale(1.1);
+}
