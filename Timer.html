@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timer</title>
+    <style>
+        body {
+            background: lightBlue;
+        }
+        .t1 {
+            background: pink;
+            width: 700px;
+            height: 600px;
+            padding-top: 80px;
+            border-radius: 30px;
+            margin: 20px;
+            color: azure;
+            font-weight: bolder;
+            font-size: 45px;
+            box-shadow: 10px 10px 5px #aaaaaa;
+            text-align: center;
+        }
+        .t1 input[type=number] {
+            height: 30px;
+            width: 150px;
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            font-size: 20px;
+            opacity: 0.7;
+        }
+        .t1 input[type=button] {
+            background: paleVioletRed;
+            height: 50px;
+            width: 100px;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+        }
+        .t1 input[type=button]:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <center><div class="t1">
+    Minutes: <input type="number" id="mint"><br><br>
+    Seconds: <input type="number" id="secnd"><br><br>
+    <input type="button" id="sub" value="Start"><br><br>
+    <div>Time = <span id="timer"></span></div>
+    <br>
+    <input type="button" id="Pause" value="Pause" onClick="pause();" >
+    </div></center>
+
+    <script>
+    document.getElementById("sub").addEventListener("click", set_timer);
+    paused = false;
+    var flagTimer='resume';
+    var t=0;
+
+    function set_timer() {
+    document.getElementById('timer').innerHTML = document.getElementById("mint").value + ":" + document.getElementById("secnd").value;
+    startTimer();
+    }
+
+    function startTimer() {
+      var presentTime = document.getElementById('timer').innerHTML;
+      var timeArray = presentTime.split(/[:]+/);
+      var m = timeArray[0];
+      var s = checkSecond((timeArray[1] - 1));
+      if(s==59){m=m-1}
+      if(m<0){
+        return
+      }
+      document.getElementById('timer').innerHTML = m + ":" + s;
+      console.log(m);
+      t=setTimeout(startTimer, 1000);
+    }
+
+    function checkSecond(sec) {
+      if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+      if (sec < 0) {sec = "59"};
+      return sec;
+    }
+
+    function pause() {
+      if( flagTimer=='resume')
+      {
+        clearTimeout(t);
+        t=0;
+        document.getElementById('Pause').value="Resume";
+        flagTimer='pause';
+      }
+      else
+      {
+        flagTimer='resume';
+        document.getElementById('Pause').value="Pause";
+        resume();
+      }
+
+    }
+    function resume() {
+        t= setTimeout(startTimer,1000);
+    }
+
+    </script>
+
+</body>
+</html>
