@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 .menu {
   list-style-type: none;
   margin: 0;
@@ -15,21 +19,23 @@
   text-decoration: none;
 }
 
+
 .dropdown {
 float: left;
 overflow: hidden;
+
 }
 
 .dropdown .dropbtn {
 font-size: 16px;
 font-weight: bold;
-font-family: serif;
 border: none;
 outline: none;
 color: white;
 padding: 20px 96px;
 background-color: inherit;
 margin: 0;
+font-family: 'Cinzel', serif;
 }
 
 .menu a:hover, .dropdown:hover .dropbtn {
@@ -55,6 +61,7 @@ background-color: #f9f9f9;
 min-width: 302px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
+font-family: 'Cinzel', serif;
 }
 
 .dropdown-content a {
@@ -140,7 +147,7 @@ to {opacity: 1}
   padding: 10px;
   margin: 10px;
   width:22%;
-  height:360px;
+  height:400px;
   background-color:beige;
   box-shadow: 10px 10px  5px rgba(0,0,0,0.4);
   border-radius: 25px;
@@ -220,7 +227,6 @@ display:inline-block;
  text-align:right;
  width:80%;
 }
-
 .section2 .sec2 h3
 {
  position: absolute;
@@ -245,11 +251,12 @@ border-radius:4px;
 text-align: center;
 margin-top:-200px;
 margin-left:1100px;
+
 }
 .sec2 button:hover
 {
-background-color:black;
-color:white;
+  background-color:black;
+  color:white;
 }
 
 .section3 img
