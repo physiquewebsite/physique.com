@@ -10,7 +10,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-   
+     <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+
     <style>
 
         .yogaa
@@ -541,11 +545,39 @@
     </div>
     <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
     <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
-    <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
+     <a href="#signin" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
+      <!--  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>-->
+    </div>
+
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" method="post" >
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required >
+
+            <button type="submit" id="sub" onclick="sub1()" >Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" style="background-color: darkBlue">Sign Up</button>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+
+        </div>
+
+
+        <div class="container" style="background-color: lavender">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
 
 <div id="id01" class="modal">
   <form class="modal-content animate" action="/action_page.php" method="post">
@@ -555,10 +587,10 @@
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
+      <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
-      <label for="psw"><b>Password</b></label>
+      <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
         <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
@@ -686,11 +718,7 @@ span.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal0) {
-    modal0.style.display = "none";
-  }
-}
+
 </script>
 
     <script>
@@ -710,11 +738,7 @@ span1.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal1) {
-    modal1.style.display = "none";
-  }
-}
+
 </script>
 
 
@@ -735,11 +759,7 @@ span2.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-}
+
 </script>
 
 
@@ -760,11 +780,6 @@ span3.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
-  }
-}
 </script>
 <script src="Pscript.js"></script>
 
@@ -858,11 +873,7 @@ span11.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal11) {
-    modal11.style.display = "none";
-  }
-}
+
 </script>
 
 
@@ -883,11 +894,6 @@ span12.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal12) {
-    modal12.style.display = "none";
-  }
-}
 </script>
 
     <script>
@@ -907,11 +913,7 @@ span13.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal13) {
-    modal13.style.display = "none";
-  }
-}
+
 </script>
 
     <script>
@@ -931,11 +933,7 @@ span14.onclick = function() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == modal14) {
-    modal14.style.display = "none";
-  }
-}
+
 </script>
 
 
@@ -1032,11 +1030,7 @@ window.onclick = function(event) {
   }
 
 
-  window.onclick = function(event) {
-    if (event.target == modal21) {
-      modal21.style.display = "none";
-    }
-  }
+
   </script>
   <script>
     var modal22 = document.getElementById("myModal22");
@@ -1055,11 +1049,7 @@ window.onclick = function(event) {
     }
 
 
-    window.onclick = function(event) {
-      if (event.target == modal22) {
-        modal22.style.display = "none";
-      }
-    }
+
     </script>
 <script>
   var modal23 = document.getElementById("myModal23");
@@ -1078,11 +1068,6 @@ window.onclick = function(event) {
   }
 
 
-  window.onclick = function(event) {
-    if (event.target == modal23) {
-      modal23.style.display = "none";
-    }
-  }
   </script>
 <script>
   var modal24 = document.getElementById("myModal24");
@@ -1101,48 +1086,13 @@ window.onclick = function(event) {
   }
 
 
-  window.onclick = function(event) {
-    if (event.target == modal24) {
-      modal24.style.display = "none";
-    }
-  }
   </script>
  </div>
  <div class="timer" style="clear:both;">
   <h1 style="text-align:center;">Start a Workout on your own with a timer!</h1>
   <center><button onclick="document.location='Timer.html'">Start Timer</button></center>
 </div>
- <footer>
-  <div class="f1">
-       <p>Newsletter</p>
-      <input type="email" placeholder="Your email" id="footer-email">
-      <button class="btn" ><i class="fab fa-telegram" style="font-size: 25px;" ;></i></button>
-  </div>
-  <div class=f2>
-      <li style="list-style-type: none; text-align: center;">
-          <a style="color: #e6ffff;" href="physique.html"><ul>Home</ul></a>
-          <a style="color: #e6ffff;" href="Yoga.html"><ul>Yoga</ul></a>
-          <a style="color: #e6ffff;" href="zumba.html"><ul>Zumba</ul></a>
-          <a style="color: #e6ffff;" href="Cardio.html"><ul>Cardio</ul></a>
-          <a style="color: #e6ffff;" href="Weight_Training.html"><ul>Weight Training</ul></a>
-          <a style="color: #e6ffff;" href="Tips.html"><ul>Fitness Tips</ul></a>
-          <a style="color: #e6ffff;" href="aboutus.html"><ul>About us</ul></a>
-      </li>
-  <div class="social">
-  <a href="https://www.facebook.com/" target="_blank">
-      <i class="fab fa-facebook"></i></a>
-  <a href="https://www.instagram.com/" target="_blank">
-  <i class="fab fa-instagram"></i></a>
-  <a href="https://twitter.com/?lang=en" target="_blank">
-      <i class="fab fa-twitter"></i></a>
-  </div>
-  <br>
-  <center><a style="color: #e6ffff;" href="tel:+911234567890"> Contact: +91-1234567890 </a></center>
-  <br>
-  <center><a style="color: #e6ffff" href="mailto: physique123@gmail.com">Email us here!</a></center>
-  <br>
-  <center><a>@Copyright 2021 by Physique.  All rights reserved.</a></center>
-  </div>
-</footer>
+  <div id="footer"></div>
+ <script src="Pscript.js"></script>
 </body>
 </html>
