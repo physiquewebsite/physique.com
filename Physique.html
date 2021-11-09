@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Physique.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" type="text/css" href="physiqueStyle.css">
      <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +11,13 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+
+
 </head>
 
 <body style="background-color:rgb(40, 40, 43);">
@@ -30,32 +37,31 @@
         <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
         <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
         <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
+
     <div id="id01" class="modal">
-      <form class="modal-content animate" action="/action_page.php" method="post">
+      <form class="modal-content animate" method="post" >
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
         </div>
 
         <div class="container">
-          <label for="uname"><b>Username</b></label>
+          <label><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
 
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required >
 
-            <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" id="sub" onclick="sub1()" >Login</button><br><center><p>Or Create Account<br></p></center>
             <button type="submit" style="background-color: darkBlue">Sign Up</button>
 
-          <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
+
         </div>
+
 
         <div class="container" style="background-color: lavender">
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
@@ -81,28 +87,14 @@
         </div>
     </div>
         <br>
-        <div style="text-align:center">
+        <div>
           <span class="dot"></span>
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
 
-    <div class="intro">
-        <h1>
-            <center>WELCOME TO <div id=flip> <div><div>PHYSIQUE</div></div></center>
-        </h1>
-        <p>
-            <b>A step towards...</b><br><br>
-            <b>P</b>- Physically fit and Personality enhancement<br>
-            <b>H</b>- High impact exercises<br>
-            <b>Y</b>- Yoga-anyone can do it<br>
-            <b>S</b>- Shape up<br>
-            <b>I</b>-  Interval Training<br>
-            <b>Q</b>- Quick Workouts<br>
-            <b>U</b>- Use your Legs, Boost your brain<br>
-            <b>E</b>- Exercise for Energy<br>
-         </p>
-
+    <div class="intro" >
+      <center><img src="phys.jpg" style="width:400px;height:300px;"></center>
     </div>
 
     <div class="cat1" style="background-color:#e6ffff;">
@@ -136,7 +128,7 @@
     </div>
 <div class="section2">
     <br>
-    <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=931&q=80" height="650px" width="1455px">
+    <center><img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=931&q=80" height="650px" width="1500px"></center>
     <div class="sec2">
         <h1 style="font-size:65px; color:#f7786b;">NUTRITIONAL<br>PLAN </h1>
         <p style="font-size:60px; color:#f7786b;font-family: 'Tangerine', cursive;">Eat real food and feel great!</p>
@@ -147,38 +139,7 @@
     </div>
 </div>
 
-<footer>
-    <div class="f1">
-         <p>Newsletter</p>
-        <input type="email" placeholder="Your email" id="footer-email">
-        <button class="btn" ><i class="fab fa-telegram" style="font-size: 25px;" ;></i></button>
-    </div>
-    <div class=f2>
-        <li style="list-style-type: none; text-align: center;">
-            <a style="color: #e6ffff;" href="physique.html"><ul>Home</ul></a>
-            <a style="color: #e6ffff;" href="Yoga.html"><ul>Yoga</ul></a>
-            <a style="color: #e6ffff;" href="zumba.html"><ul>Zumba</ul></a>
-            <a style="color: #e6ffff;" href="Cardio.html"><ul>Cardio</ul></a>
-            <a style="color: #e6ffff;" href="Weight_Training.html"><ul>Weight Training</ul></a>
-            <a style="color: #e6ffff;" href="Tips.html"><ul>Fitness Tips</ul></a>
-            <a style="color: #e6ffff;" href="aboutus.html"><ul>About us</ul></a>
-        </li>
-    <div class="social">
-    <a href="https://www.facebook.com/" target="_blank">
-        <i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/" target="_blank">
-    <i class="fab fa-instagram"></i></a>
-    <a href="https://twitter.com/?lang=en" target="_blank">
-        <i class="fab fa-twitter"></i></a>
-    </div>
-    <br>
-    <center><a style="color: #e6ffff;" href="tel:+911234567890"> Contact: +91-1234567890 </a></center>
-    <br>
-    <center><a style="color: #e6ffff" href="mailto: physique123@gmail.com">Email us here!</a></center>
-    <br>
-    <center><a>@Copyright 2021 by Physique.  All rights reserved.</a></center>
-    </div>
-</footer>
+<div id="footer"></div>
 <script src="Pscript.js"></script>
 </body>
 </html>
