@@ -10,11 +10,15 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-      
+     <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
         .box1 {
             background-image: url('https://wallpaperaccess.com/full/628256.jpg');
@@ -45,7 +49,7 @@
             width: 290px;
             height: 280px;
         }
-        .content 
+        .content
         {
         color:#333456;
         font-family: 'IM Fell French Canon SC', serif;
@@ -72,40 +76,38 @@
             </div>
             <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
             <a href="aboutus.html" class="active"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
-            <a href="#signin" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+           <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
+
+    </div>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" method="post" >
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
         </div>
-    
-        <div id="id01" class="modal">
-          <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
-            </div>
-    
-            <div class="container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-    
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-    
-                <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
-                <button type="submit" style="background-color: darkBlue">Sign Up</button>
-    
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-    
-            <div class="container" style="background-color: lavender">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-              <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-          </form>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required >
+
+            <button type="submit" id="sub" onclick="sub1()" >Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" style="background-color: darkBlue">Sign Up</button>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+
         </div>
+
+
+        <div class="container" style="background-color: lavender">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
         <center><h1 style="font-family: 'Nosifer', cursive;"> OUR STORY</h1></center>
         <div class="box1">
             <p style="font-family: 'Quintessential', cursive;">Physique.com is a fitness based website developed by a community of strong, curious and ambitious women redefining fitness on our own terms.We are here to inform, motivate and inspire action through the content and experiences we create.We are unapologetic in our beliefs and values of supporting people who are chasing their fitness dreams both big and small.</p>
@@ -139,39 +141,15 @@
             <h4>Co-founder & Web Developer</h4></center>
             </div>
             </div>
+        <div id="footer"></div>
+        <script>
+            $(function()
+{
+  $("#footer").load("Footer.html");
+});
 
-            <footer>
-                <div class="f1">
-                     <p>Newsletter</p>
-                    <input type="email" placeholder="Your email" id="footer-email">
-                    <button class="btn" ><i class="fab fa-telegram" style="font-size: 25px;" ;></i></button>
-                </div>
-                <div class=f2>
-                    <li style="list-style-type: none; text-align: center;">
-                        <a style="color: #e6ffff;" href="physique.html"><ul>Home</ul></a>
-                        <a style="color: #e6ffff;" href="Yoga.html"><ul>Yoga</ul></a>
-                        <a style="color: #e6ffff;" href="zumba.html"><ul>Zumba</ul></a>
-                        <a style="color: #e6ffff;" href="Cardio.html"><ul>Cardio</ul></a>
-                        <a style="color: #e6ffff;" href="Weight_Training.html"><ul>Weight Training</ul></a>
-                        <a style="color: #e6ffff;" href="Tips.html"><ul>Fitness Tips</ul></a>
-                        <a style="color: #e6ffff;" href="aboutus.html"><ul>About us</ul></a>
-                    </li>
-                <div class="social">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank">
-                <i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/?lang=en" target="_blank">
-                    <i class="fab fa-twitter"></i></a>
-                </div>
-                <br>
-                <center><a style="color: #e6ffff;" href="tel:+911234567890"> Contact: +91-1234567890 </a></center>
-                <br>
-                <center><a style="color: #e6ffff" href="mailto: physique123@gmail.com">Email us here!</a></center>
-                <br>
-                <center><a>@Copyright 2021 by Physique.  All rights reserved.</a></center>
-                </div>
-            </footer>
+        </script>
+    <script src="Pscript.js"></script>
 
     </body>
     </html>
