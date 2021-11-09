@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 .menu {
   list-style-type: none;
   margin: 0;
@@ -9,6 +10,7 @@
   height: 60px;
   overflow: hidden;
   background: rgb(40, 40, 43);
+
 }
 .menu a {
   float: left;
@@ -38,19 +40,12 @@ margin: 0;
 font-family: 'Cinzel', serif;
 }
 
-.menu a:hover, .dropdown:hover .dropbtn {
-background-color: #ddd;
-color: black;
-}
 
 .menu a.active {
 background-color: darkCyan;
 color: white;
 }
 
-.menu .icon {
-display: none;
-}
 
 .dropdown-content {
 opacity:0.7;
@@ -81,8 +76,8 @@ background-color: #ddd;
 display: block;
 }
 
-@media screen and (max-width: 600px) {
-.menu a:not(:first-child) {display: none;}
+/*@media screen and (max-width: 600px) {
+.menu a:not(:first-child), .dropdown .dropbtn {display: none;}
 .menu a.icon {
   float: right;
   display: block;
@@ -101,8 +96,19 @@ display: block;
   display: block;
   text-align: left;
 }
-}
 
+.menu.responsive .dropdown {float: none;}
+  .menu.responsive .dropdown-content {position: relative;}
+  .menu.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.menu .icon {
+  display: none;
+}
+*/
 .mySlides {display: none;}
 
 .slideshow-container {
@@ -163,38 +169,6 @@ to {opacity: 1}
   box-align:center;
   height: 50%;
   width:50%
-}
-#flip
-{
-height:50px;
-overflow:hidden;
-}
-
-#flip > div > div {
-color:#fff;
-padding:4px 12px;
-height:45px;
-margin-bottom:45px;
-display:inline-block;
-}
-
-#flip div:first-child {
-animation: show 1.7s linear infinite;
-}
-
-#flip div div {
-background:#42c58a;
-}
-
-@keyframes show {
-0% {margin-top:-270px;}
-5% {margin-top:-180px;}
-33% {margin-top:-180px;}
-38% {margin-top:-90px;}
-66% {margin-top:-90px;}
-71% {margin-top:0px;}
-99.99% {margin-top:0px;}
-100% {margin-top:-270px;}
 }
 
 .section2
@@ -268,18 +242,7 @@ width:400px;
 height:330px;
 padding:0 100px 60px ;
 }
-.intro  {
-margin: 25px;
-background-color: #ffffff;
-border: 1px solid black;
-opacity: 0.6;
-}
-.intro p{
-margin: 5%;
-font-weight: bold;
-color: #000000;
-font-size:22px;color:#618685;text-align:justify;letter-spacing:2px;font-family:Arial;
-}
+
 footer
 {
     text-align: left;
@@ -368,7 +331,7 @@ footer .f1 .btn:hover
 }
 .f2 li a ul:hover{
   color:skyblue;
-} 
+}
 
         .container input[type=text], input[type=password] {
           width: 100%;
