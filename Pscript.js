@@ -34,3 +34,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+        function sub1()
+        {
+             var inputPswrd = document.getElementById("psw").value;
+            var fixPswrd = "5030@cs";
+            if(inputPswrd==fixPswrd) {
+                alert("Login Successful!");
+            }
+            else {
+                alert("Wrong password! Login Failed.");
+            }
+        }
+$(function()
+{
+  $("#footer").load("Footer.html");
+});
