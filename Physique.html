@@ -15,7 +15,7 @@
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-</script>
+    </script>
 
 
 </head>
@@ -37,9 +37,7 @@
         <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
         <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
         <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
 
     <div id="id01" class="modal">
       <form class="modal-content animate" method="post" >
@@ -59,7 +57,6 @@
             <button type="submit" style="background-color: darkBlue">Sign Up</button>
 
             <input type="checkbox" checked="checked" name="remember"> Remember me
-
         </div>
 
 
@@ -70,28 +67,27 @@
       </form>
     </div>
 
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext"><h1 style="font-size:50px; font-family: 'Cormorant Garamond', serif;font-weight: bolder;">Build your strength,<br>transform your body</h1></div>
-          <img src="https://integrisok.com/-/media/blog/q2-2020/working-out.ashx?revision=7bb2b3a7-eb01-4ca7-9c89-2c53e0ce3ce2", height="650px", width="100%">
-        </div>
+   <script>
+      var i = 0;
+      var images = [];
+      var time = 5000;
+      images[0] = "https://integrisok.com/-/media/blog/q2-2020/working-out.ashx?revision=7bb2b3a7-eb01-4ca7-9c89-2c53e0ce3ce2";
+      images[1] = "https://c0.wallpaperflare.com/preview/244/648/954/fitness-men-sports-gym.jpg";
+      images[2] = "https://cdn.mos.cms.futurecdn.net/sFyvSrDEu4FSFyBKH9csNf-1280-80.jpg.webp";
+      function changeImg(){
+        document.slide.src = images[i];
+        if(i < images.length - 1){
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("changeImg()", time);
+      }
+      window.onload=changeImg;
+      </script>
 
-        <div class="mySlides fade">
-          <div class="numbertext"><h1 style="font-size:50px; font-family: 'Cormorant Garamond', serif;font-weight: bolder;">Hustle for that <br>MUSCLE</h1></div>
-          <img src="https://c0.wallpaperflare.com/preview/244/648/954/fitness-men-sports-gym.jpg", height="650px", width="100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext"><h1 style="font-size:50px; color:white; font-family: 'Cormorant Garamond', serif;">Nothing will work <br>unless you do</h1></div>
-          <img src="https://wallpaperaccess.com/full/834254.jpg",height="650px", width="100%">
-        </div>
-    </div>
-        <br>
-        <div>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+      <img name="slide" width="100%" height="650" />
+      <div class="numbertext"><h1 style="font-size:50px; font-family: 'Cormorant Garamond', serif;font-weight: bolder;">Build your strength,<br>transform your body</h1></div>
 
     <div class="intro" >
       <center><img src="phys.jpg" style="width:400px;height:300px;"></center>
@@ -124,8 +120,8 @@
     <h3 style="font-size:18px;font-family: 'Amatic SC', cursive;"> <b>WEIGHT-TRAINING</b></h3>
         <p style="font-size:16px;color:#c56d92;font-family: 'Amiri', serif;">Protects Bone Health and Muscle Mass. Helps You Develop Better Body Mechanics.</p>
         <br><a href="Weight_Training.html"><b>Try now</b></a>
-
     </div>
+
 <div class="section2">
     <br>
     <center><img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=931&q=80" height="650px" width="1500px"></center>
@@ -139,7 +135,13 @@
     </div>
 </div>
 
-<div id="footer"></div>
+    <div id="footer"></div>
+       <script>
+           $(function()
+            {
+              $("#footer").load("Footer.html");
+            });
+       </script>
 <script src="Pscript.js"></script>
 </body>
 </html>
