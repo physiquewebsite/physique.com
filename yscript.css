@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+   .yogaa
+        {
+        font-size:26px;
+        color:white;
+        }
+
+      .yogaa h3{
+          font-family: sans-serif;
+          text-align: center;
+          font-size: 40px;
+         }
+
+        .yoga1
+        {
+            float: left;
+            background:RosyBrown;
+            margin: 30px;
+            width:20%;
+            height:290px;
+            border:7px;
+            transition: transform .2s;
+        }
+
+
+            .yoga1:hover {
+            transform: scale(1.2);
+             }
+
+        .yoga1 img {
+            border-top-left: 25px;
+            border-top-right: 25px;
+        }
+        .yoga1 p
+        {
+         margin-left:50 px;
+        }
+
+
+.superyoga button
+{
+
+
+	background-color: IndianRed;
+	background-image: linear-gradient(IndianRed,lightCoral);
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	font-family: sans-serif;
+	position: relative;
+	padding: 15px 25px;
+	margin-left:75px;
+	margin-bottom:30px;
+	border:none;
+	display: inline-block;
+
+}
+        .modal0
+         {
+          display: none;
+          position: fixed;
+          align-items:center;
+          z-index:999 ;
+          left: 0;
+          top: 0;
+          width: 100%;
+         height: 100%;
+         overflow: auto;
+         }
+
+.modal0-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close0 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close0:hover,
+.close0:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+   .modal1 {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+
+}
+
+
+        .modal1-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+        .modal2
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal2-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+        .modal3
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal3-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+        .modal11
+        {
+  display: none;
+  position: fixed;
+  align:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal11-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close11 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close11:hover,
+.close11:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+     .modal12
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal12-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close12 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close12:hover,
+.close12:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+  .modal13
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal13-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close13 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close13:hover,
+.close13:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+  .modal14
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal14-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close14 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close14:hover,
+.close14:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal21
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal21-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close21 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close21:hover,
+.close21:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal22
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal22-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close22 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close22:hover,
+.close22:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal23
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal23-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close23 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close23:hover,
+.close23:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal24
+        {
+  display: none;
+  position: fixed;
+  align-items:center;
+  z-index:999 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal24-content {
+  background-color:rgba(255,0,0,0.2);
+  margin: auto;
+  padding:10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close24 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close24:hover,
+.close24:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.timer {
+            clear:both;
+            background-color: indianRed;
+            padding: 12px;
+        }
+        .timer button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .timer button:hover {
+            transform: scale(1.1);
+        }
+
+
+
+.slideshow-container {
+ position:relative;
+            width:100%;
+            height:300px;
+            border-radius:5px;
+            overflow:hidden;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
