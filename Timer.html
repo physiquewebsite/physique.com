@@ -55,7 +55,7 @@
 
     <script>
     document.getElementById("sub").addEventListener("click", set_timer);
-    paused = false;
+    var paused = false;
     var flagTimer='resume';
     var t=0;
 
@@ -71,10 +71,9 @@
       var s = checkSecond((timeArray[1] - 1));
       if(s==59){m=m-1}
       if(m<0){
-        return
+        return;
       }
       document.getElementById('timer').innerHTML = m + ":" + s;
-      console.log(m);
       t=setTimeout(startTimer, 1000);
     }
 
@@ -88,7 +87,6 @@
       if( flagTimer=='resume')
       {
         clearTimeout(t);
-        t=0;
         document.getElementById('Pause').value="Resume";
         flagTimer='pause';
       }
