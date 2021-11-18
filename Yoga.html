@@ -10,523 +10,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="yscript.css">
      <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
 </script>
-
-    <style>
-
-        .yogaa
-        {
-        font-size:26px;
-        color:white;
-        }
-
-      .yogaa h3{
-          font-family: sans-serif;
-          text-align: center;
-          font-size: 40px;
-         }
-
-        .yoga1
-        {
-            float: left;
-            background:RosyBrown;
-            margin: 30px;
-            width:20%;
-            height:290px;
-            border:7px;
-            transition: transform .2s;
-        }
-
-
-            .yoga1:hover {
-            transform: scale(1.2);
-             }
-
-        .yoga1 img {
-            border-top-left: 25px;
-            border-top-right: 25px;
-        }
-        .yoga1 p
-        {
-         margin-left:50 px;
-        }
-
-
-.superyoga button
-{
-
-
-	background-color: IndianRed;
-	background-image: linear-gradient(IndianRed,lightCoral);
-	text-decoration: none;
-	color: #fff;
-	font-size: 15px;
-	font-family: sans-serif;
-	position: relative;
-	padding: 15px 25px;
-	margin-left:75px;
-	margin-bottom:30px;
-	border:none;
-	display: inline-block;
-
-}
-        .modal0
-         {
-          display: none;
-          position: fixed;
-          align-items:center;
-          z-index:999 ;
-          left: 0;
-          top: 0;
-          width: 100%;
-         height: 100%;
-         overflow: auto;
-         }
-
-.modal0-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-
-.close0 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close0:hover,
-.close0:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-   .modal1 {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-
-
-}
-
-
-        .modal1-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close1 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close1:hover,
-.close1:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-        .modal2
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal2-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close2 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-        .modal3
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal3-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close3 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close3:hover,
-.close3:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-        .modal11
-        {
-  display: none;
-  position: fixed;
-  align:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal11-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close11 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close11:hover,
-.close11:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-     .modal12
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal12-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close12 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close12:hover,
-.close12:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-  .modal13
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal13-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close13 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close13:hover,
-.close13:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-  .modal14
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal14-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close14 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close14:hover,
-.close14:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-.modal21
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal21-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close21 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close21:hover,
-.close21:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-.modal22
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal22-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close22 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close22:hover,
-.close22:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal23
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal23-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close23 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close23:hover,
-.close23:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-.modal24
-        {
-  display: none;
-  position: fixed;
-  align-items:center;
-  z-index:999 ;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal24-content {
-  background-color:rgba(255,0,0,0.2);
-  margin: auto;
-  padding:10px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close24 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close24:hover,
-.close24:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.timer {
-            clear:both;
-            background-color: indianRed;
-            padding: 12px;
-        }
-        .timer button {
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 50px;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 25px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        .timer button:hover {
-            transform: scale(1.1);
-        }
-    </style>
 </head>
 
 <body style="background-color:rgb(40, 40, 43);">
@@ -546,12 +34,12 @@
     <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
     <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
      <a href="#signin" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
-      <!--  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>-->
+
     </div>
 
 
     <div id="id01" class="modal">
-      <form class="modal-content animate" method="post" >
+      <form class="modal-content animate" >
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
@@ -559,7 +47,7 @@
 
         <div class="container">
           <label><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
+          <input type="text" placeholder="Enter Username" name="uname" required >
 
           <label><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" id="psw" required >
@@ -579,61 +67,16 @@
       </form>
     </div>
 
-<div id="id01" class="modal">
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
-    </div>
+  <div id="imgGallary" class="slideshow-container">
 
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+    <img src="https://images.news18.com/ibnlive/uploads/2021/06/1624044810_yoga-day-history.jpg"  width="100%" height="300">
+    <img src="https://images.indianexpress.com/2019/12/yoga_759.jpg"  width="100%" height="300">
+      <img src="https://www.skolaro.com/blog/wp-content/uploads/2019/06/international-yoga-day.jpg" width="100%" height="300">
+      <img src="https://gumlet.assettype.com/freepressjournal/2021-06/4fe960e8-b14d-44c3-afd6-b0bb588d1f9f/Untitled_design___2021_06_21T121443_517.png"  width="100%" height="300">
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button><br><center><p>Or Create Account<br></p></center>
-        <button type="submit" style="background-color: darkBlue">Sign Up</button>
-
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color: lavender">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
 </div>
-<div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="https://images.news18.com/ibnlive/uploads/2021/06/1624044810_yoga-day-history.jpg", height="300px", width="100%">
-        </div>
 
-        <div class="mySlides fade">
 
-          <img src="https://images.indianexpress.com/2019/12/yoga_759.jpg", height="300px", width="100%">
-        </div>
-
-        <div class="mySlides fade">
-
-          <img src="https://www.skolaro.com/blog/wp-content/uploads/2019/06/international-yoga-day.jpg", height="300px", width="100%">
-    </div>
-
-     <div class="mySlides fade">
-
-          <img src="https://gumlet.assettype.com/freepressjournal/2021-06/4fe960e8-b14d-44c3-afd6-b0bb588d1f9f/Untitled_design___2021_06_21T121443_517.png", height="300px", width="100%">
-    </div>
-        <br>
-        <div>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-</div>
     <div class="yogaa" style="clear: both;" >
         <h3 style="border-top:4px double IndianRed; border-bottom:4px double IndianRed;" > Beginner Yoga</h3>
     </div>
@@ -647,10 +90,10 @@
   <div class="modal0-content">
     <span class="close0">&times;</span>
 
-     <iframe width="350" height="200" src="https://www.youtube.com/embed/-TSLAY_wVIU"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/uKoVR0mRk0M"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/4aEONuTVgYs"  frameborder="0" allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/4aEONuTVgYs"  frameborder="0"  allowfullscreen></iframe>
+     <iframe width="350" height="200" src="https://www.youtube.com/embed/-TSLAY_wVIU"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/uKoVR0mRk0M"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/4aEONuTVgYs"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/4aEONuTVgYs"  frameborder="1"  allowfullscreen></iframe>
   </div>
 </div>
 
@@ -663,10 +106,10 @@
   <div class="modal1-content">
     <span class="close1">&times;</span>
 
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/tkG277xvcgs" frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/RVUMgeNyWFU"  frameborder="0" allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/XbF38kStoCM"  frameborder="0"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/tkG277xvcgs" frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/RVUMgeNyWFU"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/XbF38kStoCM"  frameborder="1"  allowfullscreen></iframe>
   </div>
 </div>
 
@@ -679,10 +122,10 @@
     <div id="myModal2" class="modal2">
   <div class="modal2-content">
     <span class="close2">&times;</span>
-     <iframe width="350" height="200" src="https://www.youtube.com/embed/I1B_zYTadQ0"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/PelAUpzJngk"  frameborder="0" allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/MvylnKkr_dI"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/q08mhAqaDAA"  frameborder="0" allowfullscreen></iframe>
+     <iframe width="350" height="200" src="https://www.youtube.com/embed/I1B_zYTadQ0"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/PelAUpzJngk"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/MvylnKkr_dI"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/q08mhAqaDAA"  frameborder="1" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -694,11 +137,11 @@
     <div id="myModal3" class="modal3">
   <div class="modal3-content">
     <span class="close3">&times;</span>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/2HAIILGByow"   frameborder="0"  allowfullscreen></iframe>
-       <iframe width="350" height="200" src="https://www.youtube.com/embed/1vGfsnlyOGg"   frameborder="0"  allowfullscreen> </iframe>
-       <iframe width="350" height="200" src="https://www.youtube.com/embed/P0WIWBQFY_M"   frameborder="0"  allowfullscreen> </iframe>
-       <iframe width="350" height="200" src="https://www.youtube.com/embed/avYRpnaNNuw"   frameborder="0"  allowfullscreen> </iframe>
-       <iframe width="350" height="200" src="https://www.youtube.com/embed/VSDf3y7MFJI"   frameborder="0"  allowfullscreen> </iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/2HAIILGByow"   frameborder="1"  allowfullscreen></iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/1vGfsnlyOGg"   frameborder="1"  allowfullscreen> </iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/P0WIWBQFY_M"   frameborder="1"  allowfullscreen> </iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/avYRpnaNNuw"   frameborder="1"  allowfullscreen> </iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/VSDf3y7MFJI"   frameborder="1"  allowfullscreen> </iframe>
   </div>
 </div>
     <script>
@@ -796,10 +239,10 @@ span3.onclick = function() {
   <div class="modal11-content">
     <span class="close11">&times;</span>
 
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/6c3Gka2i9wg"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="0" allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/jkpooHwLBGY" frameborder="0"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/6c3Gka2i9wg"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/jkpooHwLBGY" frameborder="1"  allowfullscreen></iframe>
   </div>
 </div>
 
@@ -815,10 +258,10 @@ span3.onclick = function() {
     <span class="close12">&times;</span>
 
 
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/DEqLSQZVu-o"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/VSDf3y7MFJI"  frameborder="0" allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/MvylnKkr_dI"  frameborder="0" allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/3CWgR2Vb7T4"  frameborder="0" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/DEqLSQZVu-o"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/VSDf3y7MFJI"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/MvylnKkr_dI"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/3CWgR2Vb7T4"  frameborder="1" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -831,10 +274,10 @@ span3.onclick = function() {
   <div class="modal13-content">
     <span class="close13">&times;</span>
 
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/fm7wQQ7Fkpk"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/2p-MbBIm7oI"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="0" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/fm7wQQ7Fkpk"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/2p-MbBIm7oI"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="1" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -847,11 +290,11 @@ span3.onclick = function() {
 <div id="myModal14" class="modal14">
   <div class="modal14-content">
     <span class="close14">&times;</span>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/6c3Gka2i9wg"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE"  frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/jkpooHwLBGY" frameborder="0"  allowfullscreen></iframe>
-      <iframe width="350" height="200" src="https://www.youtube.com/embed/U6kid821DCM" frameborder="0"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/6c3Gka2i9wg"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/jkpooHwLBGY" frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/U6kid821DCM" frameborder="1"  allowfullscreen></iframe>
   </div>
 </div>
 
@@ -948,11 +391,11 @@ span14.onclick = function() {
 <div class="modal21-content">
 <span class="close21">&times;</span>
 
-<iframe width="350" height="200" src="https://www.youtube.com/embed/oczFawDbobA" frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/hlBGtfp5dZY"  frameborder="0" allowfullscreen></iframe>
-<iframe width="350 "height="200" src="https://www.youtube.com/embed/HvMaXLA3_FU"  frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/2HAIILGByow"  frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/5isE-U9VX_w" frameborder="0"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/oczFawDbobA" frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/hlBGtfp5dZY"  frameborder="1" allowfullscreen></iframe>
+<iframe width="350 "height="200" src="https://www.youtube.com/embed/HvMaXLA3_FU"  frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/2HAIILGByow"  frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/5isE-U9VX_w" frameborder="1"  allowfullscreen></iframe>
 </div>
 </div>
 
@@ -967,11 +410,11 @@ span14.onclick = function() {
   <div class="modal22-content">
   <span class="close22">&times;</span>
 
-  <iframe width="350" height="200" src="https://www.youtube.com/embed/Sv5SBCV05gc"  frameborder="0"  allowfullscreen></iframe>
-  <iframe width="350" height="200" src="https://www.youtube.com/embed/vBw6NxOtboo"  frameborder="0" allowfullscreen></iframe>
-  <iframe width="350 "height="200" src="https://www.youtube.com/embed/k9OogBHl6ac"  frameborder="0"  allowfullscreen></iframe>
-  <iframe width="350" height="200" src="https://www.youtube.com/embed/mcNfJJnAxnM"  frameborder="0"  allowfullscreen></iframe>
-  <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE" frameborder="0"  allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/Sv5SBCV05gc"  frameborder="1"  allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/vBw6NxOtboo"  frameborder="1" allowfullscreen></iframe>
+  <iframe width="350 "height="200" src="https://www.youtube.com/embed/k9OogBHl6ac"  frameborder="1"  allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/mcNfJJnAxnM"  frameborder="1"  allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE" frameborder="1"  allowfullscreen></iframe>
   </div>
   </div>
 
@@ -985,10 +428,10 @@ span14.onclick = function() {
 <div class="modal23-content">
 <span class="close23">&times;</span>
 
-<iframe width="350" height="200" src="https://www.youtube.com/embed/EiGZr_xOJLU"   frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/SJxymk2eJfg"   frameborder="0" allowfullscreen></iframe>
-<iframe width="350 "height="200" src="https://www.youtube.com/embed/7VUUgnU44AQ"   frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="0"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/EiGZr_xOJLU"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/SJxymk2eJfg"   frameborder="1" allowfullscreen></iframe>
+<iframe width="350 "height="200" src="https://www.youtube.com/embed/7VUUgnU44AQ"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="1"  allowfullscreen></iframe>
 </div>
 </div>
 
@@ -1003,11 +446,11 @@ span14.onclick = function() {
 <div class="modal24-content">
 <span class="close24">&times;</span>
 
-<iframe width="350" height="200" src="https://www.youtube.com/embed/6svNI_4D_vU"  frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/X7BugcxkFOs"   frameborder="0" allowfullscreen></iframe>
-<iframe width="350 "height="200" src="https://www.youtube.com/embed/AC10a0G1DYs"   frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/5isE-U9VX_w"   frameborder="0"  allowfullscreen></iframe>
-<iframe width="350" height="200" src="https://www.youtube.com/embed/RVUMgeNyWFU"  frameborder="0"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/6svNI_4D_vU"  frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/X7BugcxkFOs"   frameborder="1" allowfullscreen></iframe>
+<iframe width="350 "height="200" src="https://www.youtube.com/embed/AC10a0G1DYs"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/5isE-U9VX_w"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/RVUMgeNyWFU"  frameborder="1"  allowfullscreen></iframe>
 
 
 </div>
@@ -1093,6 +536,12 @@ span14.onclick = function() {
   <center><button onclick="document.location='Timer.html'">Start Timer</button></center>
 </div>
   <div id="footer"></div>
+  <script>
+      $(function()
+        {
+          $("#footer").load("Footer.html");
+        });
+  </script>
  <script src="Pscript.js"></script>
 </body>
 </html>
